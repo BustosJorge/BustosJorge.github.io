@@ -13569,6 +13569,11 @@ html {
   font-size: 1.5rem;
 }
 
+.feature a:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Efecto visual al pasar el cursor */
+  border-radius: inherit; /* Asegura que los bordes coincidan */
+}
+
 .profile {
   position: relative;
   height: 75vw;
