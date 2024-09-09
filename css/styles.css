@@ -13769,3 +13769,25 @@ html {
 .no-underline:hover {
   color: #007bff;
 }
+
+/* Estilo por defecto (pantallas grandes) */
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.project-image {
+  max-width: 300px; /* Ajustar el tamaño de la imagen según sea necesario */
+}
+
+/* Media query para pantallas pequeñas (por debajo de 768px de ancho) */
+@media (max-width: 768px) {
+  .flex-container {
+      flex-direction: column; /* Cambia la dirección del flex a columna (imagen debajo del texto) */
+  }
+  
+  .project-image {
+      margin-top: 20px; /* Agregar un poco de margen entre el texto y la imagen */
+      max-width: 100%;  /* Para que la imagen ocupe el ancho completo del contenedor */
+  }
+}
