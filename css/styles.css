@@ -13777,7 +13777,11 @@ html {
 }
 
 .project-image {
-  max-width: 300px; /* Ajustar el tamaño de la imagen según sea necesario */
+  max-width: 100%;  /* Para que la imagen ocupe el ancho completo del contenedor */
+  
+  width: 443px; /* Establecer el ancho por defecto */
+  height: auto; /* Establecer la altura por defecto */
+  object-fit: cover; /* Asegurar que la imagen se ajuste al tamaño sin deformarse */
 }
 
 /* Media query para pantallas pequeñas (por debajo de 768px de ancho) */
@@ -13789,5 +13793,6 @@ html {
   .project-image {
       margin-top: 20px; /* Agregar un poco de margen entre el texto y la imagen */
       max-width: 100%;  /* Para que la imagen ocupe el ancho completo del contenedor */
+      height: auto;     /* Ajustar la altura automáticamente para mantener la proporción en pantallas pequeñas */
   }
 }
