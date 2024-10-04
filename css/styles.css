@@ -13796,3 +13796,20 @@ html {
       height: auto;     /* Ajustar la altura automáticamente para mantener la proporción en pantallas pequeñas */
   }
 }
+
+
+.contenedor {
+  position: relative;
+}
+
+.hijo {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  opacity: 0.45;
+  /* centrar vertical y horizontalmente */
+  position: absolute;
+  top: 95%;
+  left: 95%;
+  margin: -30px 0 0 -25px; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+}
